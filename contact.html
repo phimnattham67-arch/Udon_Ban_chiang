@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ข้อมูลส่วนบุคคล — บ้านเชียง</title>
+  <meta name="description" content="ข้อมูลส่วนบุคคลและประวัติผู้จัดทำเว็บไซต์บ้านเชียง" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="main.js"></script>
+  <style>
+    .hero-image {
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      margin: 16px auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span>บ้านเชียง</span></a>
+
+      <div class="nav-links">
+        <a data-nav href="index.html">หน้าแรก</a>
+        <a data-nav href="history.html">ประวัติความเป็นมา</a>
+        <a data-nav href="sites.html">พิพิธภัณฑ์และแหล่งโบราณคดี</a>
+        <a data-nav href="culture.html">วัฒนธรรมและวิถีชีวิต</a>
+        <a data-nav href="travel.html">ข้อมูลการท่องเที่ยว</a>
+        <a data-nav href="contact.html">ข้อมูลส่วนบุคคล</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn hamburger" type="button" data-menu-toggle aria-label="เมนู">
+          <span aria-hidden="true">≡</span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-panel" data-mobile-panel hidden>
+      <a data-nav href="index.html">หน้าแรก</a>
+      <a data-nav href="history.html">ประวัติความเป็นมา</a>
+      <a data-nav href="sites.html">พิพิธภัณฑ์และแหล่งโบราณคดี</a>
+      <a data-nav href="culture.html">วัฒนธรรมและวิถีชีวิต</a>
+      <a data-nav href="travel.html">ข้อมูลการท่องเที่ยว</a>
+      <a data-nav href="contact.html">ข้อมูลส่วนบุคคล</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="page-title fade-in">
+      <h1>ข้อมูลส่วนบุคคล</h1>
+      <p>ประวัติผู้จัดทำ ทักษะ ความสนใจ และช่องทางการติดต่อสำหรับโครงการนี้</p>
+    </div>
+
+    <hr class="sep" />
+
+    <div class="grid-2">
+      <!-- 1) ข้อมูลพื้นฐาน -->
+      <section class="card pad fade-in">
+        <span class="badge"> ข้อมูลพื้นฐาน</span>
+        <h2 style="margin:10px 0 12px 0;">ชื่อและการศึกษา</h2>
+
+        <!-- รูปถ่ายตัวเอง: ใส่ไฟล์รูปชื่อ phim.jpg ไว้โฟลเดอร์เดียวกัน -->
+        <img class="hero-image" src="per_pic.jpg" alt="รูปถ่ายผู้จัดทำ: พิมม์ณัฐฐา เมธาณัฐยศ" />
+
+
+        <ul class="list" style="margin-top:14px;">
+          <li><span class="dot"></span><span><strong>ชื่อ-นามสกุล:</strong> พิมม์ณัฐฐา เมธาณัฐยศ</span></li>
+          <li><span class="dot"></span><span><strong>คณะ:</strong> คณะวิทยาศาสตร์</span></li>
+          <li><span class="dot"></span><span><strong>สาขา:</strong> เทคโนโลยีสารสนเทศ</span></li>
+          <li><span class="dot"></span><span><strong>ชั้นปี:</strong> ชั้นปีการศึกษาที่ 2</span></li>
+        </ul>
+      </section>
+
+      <!-- 2) ข้อมูลเกี่ยวกับตัวเอง -->
+      <section class="card pad fade-in">
+        <span class="badge"> ข้อมูลเกี่ยวกับตัวเอง</span>
+        <h2 style="margin:10px 0 8px 0;">ความสนใจและทักษะ</h2>
+
+        <h3 style="margin:14px 0 6px 0;">ความสนใจ / งานอดิเรก</h3>
+        <ul class="list">
+          <li><span class="dot"></span><span>ชอบอ่านหนังสือ</span></li>
+          <li><span class="dot"></span><span>เล่นเกม</span></li>
+          <li><span class="dot"></span><span>สนใจการสำรวจและพัฒนาศักยภาพภายในของตัวเอง</span></li>
+        </ul>
+
+        <h3 style="margin:16px 0 6px 0;">ทักษะ / ความถนัด</h3>
+        <ul class="list">
+          <li><span class="dot"></span><span>Analytical Thinking</span></li>
+          <li><span class="dot"></span><span>Creativity &amp; Imagination</span></li>
+        </ul>
+
+        <h3 style="margin:16px 0 6px 0;">สิ่งที่ชอบ / เป้าหมาย</h3>
+        <p class="muted" style="margin:0;">
+          อยากเรียนรู้ UX/UI และการออกแบบดีไซน์เกม
+        </p>
+      </section>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- 3) ข้อมูลติดต่อ -->
+    <section class="card pad fade-in">
+      <span class="badge"> ข้อมูลติดต่อ</span>
+      <h2 style="margin:10px 0 8px 0;">ช่องทางการติดต่อ</h2>
+
+      <ul class="list">
+        <li><span class="dot"></span><span><strong>อีเมลนักศึกษา :</strong> phimnattham67@nu.ac.th</span></li>
+      </ul>
+
+      <div class="btn-row" style="margin-top:14px;">
+        <a class="btn primary" href="index.html">กลับหน้าแรก</a>
+        <a class="btn accent" href="travel.html">ข้อมูลการท่องเที่ยว</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p class="muted small" style="margin:0;">© <span id="year"></span> บ้านเชียง — มรดกโลกทางวัฒนธรรม</p>
+  </div>
+</footer>
+</body>
+</html>
